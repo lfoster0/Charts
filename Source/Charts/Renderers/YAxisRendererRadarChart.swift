@@ -11,7 +11,9 @@
 
 import Foundation
 import CoreGraphics
-
+#if !os(macOS)
+import UIKit
+#endif
 
 open class YAxisRendererRadarChart: YAxisRenderer
 {

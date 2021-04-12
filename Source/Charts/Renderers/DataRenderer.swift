@@ -11,6 +11,9 @@
 
 import Foundation
 import CoreGraphics
+#if !os(macOS)
+import UIKit
+#endif
 
 @objc(ChartDataRenderer)
 public protocol DataRenderer: Renderer

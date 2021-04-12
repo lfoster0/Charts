@@ -11,6 +11,9 @@
 
 import Foundation
 import CoreGraphics
+#if !os(macOS)
+import UIKit
+#endif
 
 open class CombinedChartRenderer: NSObject, DataRenderer
 {
